@@ -8,13 +8,7 @@
 
 ## How to operate your program
 
-with maven:
-    $mvn compile
-    $mvn exec:java
-
-### Running from the command line (without maven)
-
-assemble to a jar file:
+first, assemble to a jar file using maven:
     $mvn assembly:assembly
 
 run GUI version:
@@ -28,10 +22,10 @@ run cmd line version:
 Type quit to exit the program/quit the game!
 You can type go <n/s/e/w/up/down> to go North , South, East, West, up, or down.
 You can type look to see a description of the room you are in or type look <item> to see a description of a certain item in the same room that you are in.
-You can toss, eat, read, or wear items that are tossable/edible/readable/wearable. Not every item has these characteristics. 
+You can type toss <item>, eat <item>, read <item>, or wear <item> with items that are tossable/edible/readable/wearable. Not every item has these characteristics. 
 You can enter your own filePath as cmd line args to open a json file or serialized save, simply use the default one I have created. 
 
-**ASSUMPTIONS THAT I MADE:
+**ASSUMPTIONS THAT I MADE:**
 - you can look at items that are in your inventory at any time
 - the setConnectedRoom() method does not automatically set a double-sided connection between the rooms.
   it simply sets a connection from this.room to the one passed as a param.  
