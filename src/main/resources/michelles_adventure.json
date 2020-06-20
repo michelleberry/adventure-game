@@ -1,0 +1,170 @@
+{
+    "adventure": {
+      "room": [
+        {
+          "id": 201,
+          "name": "a clearing in the forest",
+          "short_description": "This is a clearing in the middle of a forest",
+          "long_description": "To all sides except south, there is thick dense forest. South of you is an ominous stone archway. To the west there is a dirty bathtub",
+          "entrance": [
+            {
+              "id": 200,
+              "dir": "S"
+            }, 
+            {
+                "id": 202, 
+                "dir": "W"
+            }
+          ]
+        },
+        {
+          "id": 200,
+          "name": "The stone arch",
+          "start": "true", 
+          "short_description": "A stone arch marks the entrance to a thick wooded forest",
+          "long_description": "A stone arch is to the north of you. Down behind you are several hundred holes, too deep to see the bottom of",
+          "entrance": [
+            {
+              "id": 201,
+              "dir": "N"
+            }, 
+            { 
+                "id": 400, 
+                "dir": "down"
+            }
+          ]
+        },
+        {
+          "id": 202,
+          "name": "The forest spa",
+          "short_description": "A clawfoot bathtub sits in a forest",
+          "long_description": "This is just a piece of forest with a bathtub in it. In the distance you can see a stone temple sort of thingy. I would probably head north and check it out",
+          "entrance": [
+            {
+              "id": 201,
+             "dir": "E"
+            }, 
+            {
+                "id":203, 
+                "dir": "N"
+            }
+          ],
+          "loot": [
+            {
+              "id": 4
+            }
+          ]
+        }, 
+        {
+            "id": 203, 
+            "name": "The stone temple exterior",
+            "short_description":"A large structure with impressive stone gargoyles atop its turrets", 
+            "long_description":"You are outside a temple made out of stone", 
+            "entrance":[
+                {
+                    "id": 202,
+                    "dir": "S"
+                },
+                {
+                  "id":69, 
+                  "dir": "N"
+                }
+            ], 
+            "loot":[
+                {
+                    "id":7
+                },
+                {
+                    "id":3
+                }
+            ]
+        }, 
+        {
+            "id": 400, 
+            "name":"A deep dark hole", 
+            "short_description":"You have fallen into a dark hole", 
+            "long_description": "Oh no. you have fallen into a deep dark hole and your ankle is really sprained now. Luckily there is a ladder that you can use.", 
+            "entrance":[
+              {
+                "id":200,
+                "dir":"up"
+              }
+            ],
+            "loot":[
+                {
+                    "id":1
+                },
+                {
+                   "id":1337
+                }
+            ]
+        }, 
+        {
+          "id":69,
+          "name":"inside of temple", 
+          "short_description":"You are now inside of the stone temple", 
+          "long_description":"You're inside of the stone temple. It is dusty and hard to breathe ... the walls seem to be crumbling",
+          "entrance":[
+            {
+              "id":203,
+              "dir":"S"
+            }
+          ], 
+          "loot":[
+            {
+              "id":2
+            }, 
+            {
+              "id":8
+            }
+          ]
+        }
+      ],
+      "item": [
+        {
+          "id": 1,
+          "name": "rock",
+          "desc": "a dirty rock. it has 'stanley yelnats' carved into it.",
+          "tossable":"true"
+        },
+        {
+          "id":1337, 
+          "name": "gentle snake", 
+          "desc":"he will not bite you. he likes to ride on shoulders and be worn like that.", 
+          "wearable":"true"
+        },
+        {
+          "id": 2,
+          "name": "master sword",
+          "desc": "A sword made of surgical steel. It looks pointy, sharp, and dangerous. There is a triforce symbol engraved at it's base",
+          "tossable":"true"
+        },
+        {
+            "id":3, 
+            "name": "green hat", 
+            "desc": "A zelda brand product",
+            "wearable":"true", 
+            "readable":"true"
+        },
+        {
+          "id":4, 
+          "name": "soap spell", 
+          "desc": "alacazam! zoo wee mama! you're clean now. thank god, you smelled really bad before.", 
+          "readable":"true"
+        },
+        {
+          "id":7,
+          "name":"bean", 
+          "desc":"A little kidney bean. You could probably toss it around, or eat it", 
+          "edible":"true", 
+          "tossable":"true"
+        }, 
+        {
+          "id":8, 
+          "name":"cheese", 
+          "desc":"some mozzarella cheese",
+          "edible":"true"
+        }
+      ]
+    }
+  }
