@@ -125,45 +125,45 @@
           "id": 1,
           "name": "rock",
           "desc": "a dirty rock. it has 'stanley yelnats' carved into it.",
-          "tossable":"true"
+          "tossable":true
         },
         {
           "id":1337, 
           "name": "gentle snake", 
           "desc":"he will not bite you. he likes to ride on shoulders and be worn like that.", 
-          "wearable":"true"
+          "wearable":true
         },
         {
           "id": 2,
           "name": "master sword",
           "desc": "A sword made of surgical steel. It looks pointy, sharp, and dangerous. There is a triforce symbol engraved at it's base",
-          "tossable":"true"
+          "tossable":true
         },
         {
             "id":3, 
             "name": "green hat", 
             "desc": "A zelda brand product",
-            "wearable":"true", 
-            "readable":"true"
+            "wearable":true, 
+            "readable":true
         },
         {
           "id":4, 
           "name": "soap spell", 
           "desc": "alacazam! zoo wee mama! you're clean now. thank god, you smelled really bad before.", 
-          "readable":"true"
+          "readable":true
         },
         {
           "id":7,
           "name":"bean", 
           "desc":"A little kidney bean. You could probably toss it around, or eat it", 
-          "edible":"true", 
-          "tossable":"true"
+          "edible":true, 
+          "tossable":true
         }, 
         {
           "id":8, 
           "name":"cheese", 
           "desc":"some mozzarella cheese",
-          "edible":"true"
+          "edible":true
         }
       ]
     }
