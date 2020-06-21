@@ -222,10 +222,10 @@ public class Adventure implements java.io.Serializable{
     public Item setItemType(JSONObject someItem){
         //check type of ITEM!! here
         Item toReturn = null; 
-        if(someItem.containsKey("edible") && someItem.get("edible").equals("true")){
+        if(someItem.containsKey("edible") && (boolean)someItem.get("edible").equals(true)){
             //make an edible item...
             toReturn = setFoodItemType(someItem);
-        } else if(someItem.containsKey("wearable") && someItem.get("wearable").equals("true")){
+        } else if(someItem.containsKey("wearable") && (boolean)someItem.get("wearable").equals(true)){
             toReturn = setClothingItemType(someItem);  
         } else {
             toReturn = setItemTypeTwo(someItem);
@@ -240,10 +240,10 @@ public class Adventure implements java.io.Serializable{
      */
     public Item setItemTypeTwo(JSONObject someItem){
         Item toReturn = null; 
-        if(someItem.containsKey("tossable") && someItem.get("tossable").equals("true")){
+        if(someItem.containsKey("tossable") && (boolean)someItem.get("tossable").equals(true)){
             //make an edible item...
             toReturn = new Weapon(someItem); 
-        } else if(someItem.containsKey("readable") && someItem.get("readable").equals("true")){
+        } else if(someItem.containsKey("readable") && (boolean)someItem.get("readable").equals(true)){
             toReturn = new Spell(someItem);  
         } else {
             toReturn = new Item(someItem);
@@ -257,7 +257,7 @@ public class Adventure implements java.io.Serializable{
      * @return item that is instance of correct type
      */
     public Item setFoodItemType(JSONObject someItem){
-        if(someItem.containsKey("tossable") && someItem.get("tossable").equals("true")){
+        if(someItem.containsKey("tossable") && (boolean)someItem.get("tossable").equals(true)){
             return new SmallFood(someItem); 
         }
         return new Food(someItem); 
@@ -269,7 +269,7 @@ public class Adventure implements java.io.Serializable{
      * @return item that is instance of correct type
      */
     public Item setClothingItemType(JSONObject someItem){
-        if(someItem.containsKey("readable") && someItem.get("readable").equals("true")){
+        if(someItem.containsKey("readable") && (boolean)someItem.get("readable").equals(true)){
             return new BrandedClothing(someItem); 
         }
         return new Clothing(someItem); 
